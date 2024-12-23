@@ -1,0 +1,111 @@
+.snow {
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+
+    align-items: center;
+}
+
+@keyframes fall {
+    0% {
+        scale: 0.3;
+    }
+    25% {
+
+        scale: 0.1;
+        transform: translate(200px, 200px);
+    }
+    50% {
+        scale: 0.3;
+        transform: translate(300px, 200px);
+    }
+    75% {
+        scale: 0.1;
+        transform: translate(400px, 300px);
+    }
+    100% {
+        scale: 0.3;
+        transform: translate(400px, 400px);
+    }
+}
+
+.clicker {
+    background: url('./snowflake.png');
+    background-size: cover;
+    animation-name: fall;
+    scale: 0.3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    margin: -20%;
+
+    padding: -100%;
+}
+
+.clicker1 {
+    background: url('./snowflake.png');
+    background-size: cover;
+    animation-name: fall;
+    scale: 0.3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    padding: -100;
+}
+
+body {
+    /* box-sizing: border-box; */
+    background-color: aliceblue;
+    /* border: 10px solid black; */
+    opacity: 50%;
+
+}
+/* 
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
+.snowman1 {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 50px;
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+}
+
+.snowman2 {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 75px;
+    z-index: 5;
+    position: absolute;
+    left: 48.5%;
+    top: 103%;;
+}
+
+.snowman3 {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 100px;
+    z-index: 5;
+    position: absolute;
+    left: 47%;
+    top: 115%;
+}
+
+p {
+    position: absolute;
+    top: 200%;
+    font-family: 'American Typewriter', serif;
+    text-align: center;
+    align-items: center;
+}
